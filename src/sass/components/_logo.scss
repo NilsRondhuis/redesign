@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--white-cl);
+
+    .logo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+        background-color: var(--white-cl);
+        border-radius: 50%;
+    }
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include for-size(tablet) {
+        font-size: 21px;
+    }
+}
