@@ -2,10 +2,13 @@
   "name": "x",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://NilsRondhuis.github.io/redesign",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url /redesing/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,7 @@
     "sass": "^1.50.1"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "swiper": "^8.1.3"
   }
 }
