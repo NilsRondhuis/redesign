@@ -1,0 +1,47 @@
+.works {
+  .text {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  @include for-size(tablet) {
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box-item {
+      flex-basis: calc((100% - 1 * 20px) / 2);
+    }
+    .text {
+      margin: 0;
+    }
+  }
+  @include for-size(desktop) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 50%,
+        rgba(255, 255, 255, 0.9) 100%
+      ),
+      url(../images/works/desktop/bg/works-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .works-title {
+      text-align: left;
+    }
+    .box {
+      display: block;
+    }
+    .box-item:nth-child(2) {
+      padding: 10px;
+    }
+    .text {
+      margin: 0 0 40px auto;
+      width: 50%;
+    }
+  }
+}

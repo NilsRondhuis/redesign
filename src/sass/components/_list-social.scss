@@ -1,0 +1,39 @@
+.list-social {
+  @include for-size(desktop) {
+    display: flex;
+  }
+
+  .item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include for-size(desktop) {
+        margin: 0 35px 0 0;
+      }
+    }
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+
+    .text {
+      display: none;
+      font-weight: 600;
+      color: var(--main-text-cl);
+
+      @include for-size(tablet) {
+        display: block;
+      }
+      @include for-size(desktop) {
+        font-size: 18px;
+      }
+    }
+  }
+  .icon {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    fill: var(--btn-cl);
+  }
+}

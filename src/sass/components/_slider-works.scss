@@ -1,0 +1,35 @@
+.works {
+  .works-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-button-prev {
+    left: 5px;
+    background-image: url(../images/png/circle-left.png);
+  }
+  .swiper-button-next {
+    right: 5px;
+    background-image: url(../images/png/circle-right.png);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &::after {
+      content: "";
+    }
+  }
+  @include for-size(desktop) {
+    .swiper-slide {
+      box-shadow: 0px 10px 8px -5px rgba(34, 60, 80, 0.6);
+    }
+    .swiper-button-prev {
+      left: 10px;
+    }
+    .swiper-button-next {
+      right: 10px;
+    }
+  }
+}

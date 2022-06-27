@@ -1,0 +1,105 @@
+.footer {
+  padding: 20px 0;
+  background-color: #3b69b2;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    margin: 0 0 40px 0;
+  }
+  .footer-title {
+    margin: 0 0 10px 0;
+    font-size: 21px;
+    color: white;
+  }
+  .address {
+    font-style: normal;
+  }
+  .address-box,
+  .work-time-box,
+  .social-box,
+  .address,
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .address-box,
+  .work-time-box {
+    margin-bottom: 30px;
+  }
+  .work-time-box .work-time {
+    color: white;
+  }
+  .social-box {
+    margin-bottom: 50px;
+  }
+}
+
+.address-list {
+  width: 260px;
+  .item {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  .link-location,
+  .link-phone {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    white-space: none;
+    color: white;
+  }
+  .icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  .link-phone .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.copy {
+  text-align: center;
+  color: white;
+}
+
+@include for-size(tablet) {
+  .footer {
+    padding: 40px 0;
+
+    .list-social .text {
+      color: white;
+    }
+  }
+}
+
+@include for-size(desktop) {
+  .footer {
+    background-image: url(../images/result/bg/vector-turn.png);
+    background-repeat: no-repeat;
+    background-position: -1060px 0px;
+    background-size: 2550px;
+    .container {
+      display: block;
+    }
+    .shared-flex {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
+    .address-box,
+    .work-time-box,
+    .social-box {
+      margin: 0;
+    }
+  }
+}

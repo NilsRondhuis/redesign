@@ -4,6 +4,10 @@
 
   @include for-size(desktop) {
     text-align: left;
+
+    .benefits-title {
+      text-align: center;
+    }
   }
 }
 .section-favourite__subhead {

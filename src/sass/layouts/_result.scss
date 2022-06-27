@@ -1,4 +1,5 @@
 .result {
+  background-color: rgb(239, 252, 254);
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.4) 0%,
@@ -17,7 +18,9 @@
 }
 
 .img-result {
-  display: none;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: white;
 }
 
 .list-testimonial {
@@ -109,6 +112,9 @@
     text-align: left;
     color: var(--section-title-cl);
   }
+  .img-result {
+    display: none;
+  }
   .result-shared-box {
     display: flex;
   }
@@ -144,8 +150,10 @@
   }
   .img-result {
     display: block;
+    margin: 0;
     padding: 50px 20px;
     width: 650px;
+    color: var(--main-text-cl);
     background-image: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.6) 0%,
@@ -167,8 +175,8 @@
   }
   .analysis-box {
     top: 60%;
-    left: 7%;
-    width: 730px;
+    left: 0;
+    width: 685px;
     box-shadow: var(--box-shadow-blue);
   }
 }
